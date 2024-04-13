@@ -10,7 +10,7 @@ import { asciiStringToBytes32 } from './src/util/asciiStringToBytes32'
 import { version } from './package.json'
 
 program
-  .requiredOption('-pk, --private-key <string>', 'Private key used to deploy all contracts', '3b47f956c85e3298480a600198a6d3f012de27765b8f73faa75e5ff5b56be6f7')
+  .requiredOption('-pk, --private-key <string>', 'Private key used to deploy all contracts', '----')
   .requiredOption('-j, --json-rpc <url>', 'JSON RPC URL where the program should be deployed', 'https://rpc.ankr.com/blast_testnet_sepolia')
   .requiredOption('-w9, --weth9-address <address>', 'Address of the WETH9 contract on this chain', '0x4200000000000000000000000000000000000023')
   .requiredOption('-ncl, --native-currency-label <string>', 'Native currency label, e.g. ETH', 'ETH')
